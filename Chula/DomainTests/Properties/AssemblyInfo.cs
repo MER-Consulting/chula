@@ -1,16 +1,15 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Chula Reference Implementation Application")]
+[assembly: AssemblyTitle("Tests project for Chula Infrastructure Library")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MER Consulting")]
-[assembly: AssemblyProduct("Chula")]
+[assembly: AssemblyProduct("Chul")]
 [assembly: AssemblyCopyright("Copyright © MER Consulting 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("903fcac8-c224-4735-83b4-379e19529613")]
+[assembly: Guid("658c5f5d-abd0-4585-b32d-2d0ea5742420")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,7 +31,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("0.1.*")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
-// AssemblyInformationalVersion should comply with SemVer (http://semver.org/)
-[assembly: AssemblyInformationalVersion("0.1.0")]
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

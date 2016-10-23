@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Acronyms>
+    <CasingExceptions>
+      <!-- Common acronym for MER Consulting. Quasi-recursive, i know... -->
+      <Acronym>MER</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

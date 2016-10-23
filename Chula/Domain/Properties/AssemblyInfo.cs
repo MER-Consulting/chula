@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Chula Reference Implementation Application")]
+[assembly: AssemblyTitle("Chula Domain Library")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MER Consulting")]
@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("903fcac8-c224-4735-83b4-379e19529613")]
+[assembly: Guid("345d2986-9c92-4f4e-97fb-1bc2abd8f8c0")]
 
 // Version information for an assembly consists of the following four values:
 //
