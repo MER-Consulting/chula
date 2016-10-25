@@ -24,7 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{12ABA0EA-9B0A-4648-8F96-D59C051B1339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureTests", "DomainTests\InfrastructureTests.csproj", "{658C5F5D-ABD0-4585-B32D-2D0EA5742420}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureTests", "InfrastructureTests\InfrastructureTests.csproj", "{658C5F5D-ABD0-4585-B32D-2D0EA5742420}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
