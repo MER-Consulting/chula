@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventBase.cs" />
+    <Compile Include="IEventSink.cs" />
     <Compile Include="IEventSource.cs" />
     <Compile Include="IEventStore.cs" />
     <Compile Include="NameVersionPair.cs" />

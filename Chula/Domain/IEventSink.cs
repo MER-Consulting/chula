@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace MER.Chula.Domain
 {
-    public interface IEventStore : IEventSource, IEventSink { }
+    public interface IEventSink
+    {
+        void WriteEvents(IEnumerable<EventBase> events);
+    }
 }
