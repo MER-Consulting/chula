@@ -51,7 +51,7 @@ namespace MER.Chula.Domain
         public override string ToString()
         {
             if (this.name == null)
-                throw new InvalidOperationException();
+                return "[NULL]";
 
             return string.Format("{0}-{1}", this.name, this.version);
         }
