@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7DA88B3-872C-406D-809C-16B786360C97}</ProjectGuid>
+    <ProjectGuid>{658C5F5D-ABD0-4585-B32D-2D0EA5742420}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MER.Chula.DomainTests</RootNamespace>
-    <AssemblyName>MER.Chula.DomainTests</AssemblyName>
+    <RootNamespace>MER.Chula.InfrastructureTests</RootNamespace>
+    <AssemblyName>MER.Chula.InfrastructureTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,10 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
-      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -54,17 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DumbFileSystemEventStoreTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleEventSourceQueryableTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{345D2986-9C92-4F4E-97FB-1BC2ABD8F8C0}</Project>
-      <Name>Domain</Name>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj">
+      <Project>{cac6f9e4-8271-4b2b-95d2-e694385b3f74}</Project>
+      <Name>Infrastructure</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
