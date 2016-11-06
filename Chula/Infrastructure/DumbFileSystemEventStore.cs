@@ -17,6 +17,11 @@ namespace MER.Chula.Infrastructure
         private FileInfo file;
         private JsonSerializerSettings serializerSettings;
 
+        public IEventSourceWhere Where
+        {
+            get { return new SimpleEventSourceQueryable(this); }
+        }
+
         public DumbFileSystemEventStore(string fileName, JsonSerializerSettings serializerSettings)
         {
             if (fileName == null)

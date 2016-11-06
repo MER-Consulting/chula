@@ -48,6 +48,7 @@
     <Compile Include="IEventStore.cs" />
     <Compile Include="NameVersionPair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleEventSourceQueryable.cs" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="..\CustomDictionary.xml">

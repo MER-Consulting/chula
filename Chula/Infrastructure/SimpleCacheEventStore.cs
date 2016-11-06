@@ -13,6 +13,11 @@ namespace MER.Chula.Infrastructure
         private IEventStore store;
         private Lazy<List<EventBase>> cache;
 
+        public IEventSourceWhere Where
+        {
+            get { return new SimpleEventSourceQueryable(this); }
+        }
+
         public SimpleCacheEventStore(IEventStore eventStore = null)
         {
             this.rwLock = new ReaderWriterLockSlim();

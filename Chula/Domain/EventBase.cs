@@ -8,15 +8,15 @@ namespace MER.Chula.Domain
 {
     public abstract class EventBase
     {
-        public ulong SequenceNumber { get; }
+        public abstract ulong SequenceNumber { get; }
 
-        public NameVersionPair EventType { get; }
+        public abstract NameVersionPair EventType { get; }
 
-        public string AggregateType { get; }
+        public abstract string AggregateType { get; }
 
-        public string AggregateId { get; }
+        public abstract string AggregateId { get; }
 
-        public string Data { get; }
+        public abstract string Data { get; }
 
     }
 }
