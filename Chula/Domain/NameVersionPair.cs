@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace MER.Chula.Domain
 {
     public struct NameVersionPair : IEquatable<NameVersionPair>
     {
+        private static Regex nameRex = new Regex(@"\p{L}+");
+        private static Regex reprRex = new Regex(@"(\p{L}+)-(\d+)");
         public static readonly NameVersionPair Null = new NameVersionPair();
         private readonly string name;
         private readonly uint version;
@@ -13,8 +16,21 @@ namespace MER.Chula.Domain
             if (name == null)
                 throw new ArgumentNullException(nameof(name));
 
+            if (!nameRex.IsMatch(name))
+                throw new ArgumentException("Argument must only contain letters.", nameof(name));
+
             this.name = name;
             this.version = version;
+        }
+
+        public static NameVersionPair Parse(string repr)
+        {
+            var match = reprRex.Match(repr);
+
+            if (match.Success)
+                return new NameVersionPair(match.Groups[1].Value, uint.Parse(match.Groups[2].Value));
+            else
+                throw new FormatException();
         }
 
         public bool Equals(NameVersionPair other)
@@ -30,6 +46,14 @@ namespace MER.Chula.Domain
         public override int GetHashCode()
         {
             return this.name == null ? 0 : this.name.GetHashCode() ^ this.version.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            if (this.name == null)
+                throw new InvalidOperationException();
+
+            return string.Format("{0}-{1}", this.name, this.version);
         }
 
         public string Name
