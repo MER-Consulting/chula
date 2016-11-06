@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MER Consulting")]
-[assembly: AssemblyProduct("Chul")]
+[assembly: AssemblyProduct("Chula")]
 [assembly: AssemblyCopyright("Copyright © MER Consulting 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
