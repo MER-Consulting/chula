@@ -5,8 +5,8 @@ namespace MER.Chula.Domain
 {
     public struct NameVersionPair : IEquatable<NameVersionPair>
     {
-        private static Regex nameRex = new Regex(@"\p{L}+");
-        private static Regex reprRex = new Regex(@"(\p{L}+)-(\d+)");
+        private static Regex nameRex = new Regex(@"^\p{L}+$");
+        private static Regex reprRex = new Regex(@"^(\p{L}+)-(\d+)$");
         public static readonly NameVersionPair Null = new NameVersionPair();
         private readonly string name;
         private readonly uint version;
